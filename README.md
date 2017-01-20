@@ -54,6 +54,20 @@ print(api.promote(userId).message)
 print(api.message(userId, 'Subject', 'Body').message)
 ```
 
+## PHP Example
+
+A PHP class file is avalible in [php/class.php](./php/class.php) that allows you to use functions to send commands to the server. It is very similar to the LUA example but you can have this hosted off the webserver using a familiar language.
+
+Example usage, assuming that the PHP class file is named "class.php" and is in the same directory as the class.
+```php
+<?php
+include_once 'class.php';
+ 
+$rbxBot = new RobloxJS();
+echo $rbxBot -> getPlayers('2516579','254');
+?>
+```
+
 ## Documentation
 
 ### METHOD /example/{argument1: type}/{argument2: type}/[optional argument: type]?[optional_argument: type]&[optional_argument2: type]
